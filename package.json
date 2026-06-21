@@ -1,5 +1,5 @@
 {
-  "name": "queuekit",
+  "name": "@billdaddy/queuekit",
   "version": "0.1.0",
   "description": "Tiny, type-safe async task queue — concurrency limit, priority, pause/resume, onIdle/onEmpty drain, and AbortSignal. Zero dependencies.",
   "keywords": [

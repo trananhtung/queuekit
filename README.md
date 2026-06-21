@@ -3,10 +3,10 @@
 > Tiny, type-safe **async task queue** — concurrency limit, **priority**, pause/resume, `onIdle`/`onEmpty` drain, and **`AbortSignal`**. **Zero dependencies**.
 
 [![CI](https://github.com/trananhtung/queuekit/actions/workflows/ci.yml/badge.svg)](https://github.com/trananhtung/queuekit/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/queuekit.svg)](https://www.npmjs.com/package/queuekit)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/queuekit)](https://bundlephobia.com/package/queuekit)
-[![types](https://img.shields.io/npm/types/queuekit.svg)](https://www.npmjs.com/package/queuekit)
-[![license](https://img.shields.io/npm/l/queuekit.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/@billdaddy/queuekit.svg)](https://www.npmjs.com/package/@billdaddy/queuekit)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@billdaddy/queuekit)](https://bundlephobia.com/package/@billdaddy/queuekit)
+[![types](https://img.shields.io/npm/types/@billdaddy/queuekit.svg)](https://www.npmjs.com/package/@billdaddy/queuekit)
+[![license](https://img.shields.io/npm/l/@billdaddy/queuekit.svg)](./LICENSE)
 
 When you have a *known list*, you map it with a concurrency limit and you're done.
 But when work arrives **over time** — webhook handlers, a crawler discovering
@@ -15,7 +15,7 @@ can keep adding to, that bounds how much runs at once and lets you await the
 drain. That's `queuekit`.
 
 ```ts
-import { Queue } from "queuekit";
+import { Queue } from "@billdaddy/queuekit";
 
 const queue = new Queue({ concurrency: 4 });
 
@@ -44,8 +44,8 @@ await queue.onIdle(); // resolves when everything has settled
 ## Install
 
 ```bash
-npm install queuekit
-# or: pnpm add queuekit  /  yarn add queuekit  /  bun add queuekit
+npm install @billdaddy/queuekit
+# or: pnpm add @billdaddy/queuekit  /  yarn add @billdaddy/queuekit  /  bun add @billdaddy/queuekit
 ```
 
 ## API
